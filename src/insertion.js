@@ -1,6 +1,6 @@
 function insertion(arr) {
   // let counter = 1;
-  let length = arr.length;
+  const length = arr.length;
   for(let i = 1; i < length; i++) {
     for(let j = i; j > 0; j--) {
       // console.log('iteration', counter++);
@@ -15,6 +15,6 @@ function insertion(arr) {
   return arr;
 }
 
-for(let i = 0; i < 10; i++) {
-  console.log(insertion(generateArray()));
+for (let i = 0; i < 10; i++) {
+  insertion(generateArray());
 }
