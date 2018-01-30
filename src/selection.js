@@ -1,7 +1,7 @@
 function findLowest(arr, start) {
   let lowest = start;
-  const length = arr.length;
-  for(let i = start + 1; i < length; i++) {
+  const { length } = arr;
+  for (let i = start + 1; i < length; i++) {
     let current = arr[i];
     if (current < lowest) {
       lowest = current;

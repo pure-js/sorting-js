@@ -16,3 +16,5 @@ function bubble(arr) {
   }
   return arr;
 }
+
+export default bubble;
