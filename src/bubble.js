@@ -1,13 +1,13 @@
 function bubble(arr) {
-  let length = arr.length,
-    innerLength = arr.length;
+  const { length } = arr;
+  let innerLength = arr.length;
 
   for (let i = 0; i < length; i++) {
-    for(let j = 0; j < innerLength; j++) {
-      let current = arr[j],
-        next = arr[j + 1];
+    for (let j = 0; j < innerLength; j++) {
+      const current = arr[j];
+      const next = arr[j + 1];
 
-      if(current > next) {
+      if (current > next) {
         arr[j] = next;
         arr[j+1] = current;
       }
@@ -16,3 +16,5 @@ function bubble(arr) {
   }
   return arr;
 }
+
+export default bubble;
