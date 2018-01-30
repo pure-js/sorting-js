@@ -1,4 +1,4 @@
-function bubble(arr) {
+function bubbleSort(arr) {
   const { length } = arr;
   let innerLength = arr.length;
 
@@ -9,7 +9,7 @@ function bubble(arr) {
 
       if (current > next) {
         arr[j] = next;
-        arr[j+1] = current;
+        arr[j + 1] = current;
       }
     }
     innerLength--;
@@ -17,4 +17,4 @@ function bubble(arr) {
   return arr;
 }
 
-export default bubble;
+export default bubbleSort;

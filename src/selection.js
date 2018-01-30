@@ -2,7 +2,7 @@ function findLowest(arr, start) {
   let lowest = start;
   const { length } = arr;
   for (let i = start + 1; i < length; i++) {
-    let current = arr[i];
+    const current = arr[i];
     if (current < lowest) {
       lowest = current;
     }
@@ -22,8 +22,4 @@ function selection(arr) {
   for(let i = 1; i < length; i++) {
 
   }
-}
-
-for(let i = 0; i < 10; i++) {
-  console.log(selection(generateArray()));
 }

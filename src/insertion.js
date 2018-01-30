@@ -1,20 +1,17 @@
-function insertion(arr) {
-  // let counter = 1;
-  const length = arr.length;
-  for (let i = 1; i < length; i++) {
-    for (let j = i; j > 0; j--) {
-      // console.log('iteration', counter++);
-      const current = arr[j];
-      const prev = arr[j-1];
-      if (current < prev) {
-        arr[j-1] = current;
-        arr[j] = prev;
-      }
+function insertionSort(items) {
+  for (let i = 0; i < items.length; i++) {
+    const value = items[i];
+    // store the current item value so it can be placed right
+    for (var j = i - 1; j > -1 && items[j] > value; j--) {
+      // loop through the items in the sorted array (the items from the current to the beginning)
+      // copy each item to the next one
+      items[j + 1] = items[j];
     }
+    // the last item we've reached should now hold the value of the currently sorted item
+    items[j + 1] = value;
   }
-  return arr;
+
+  return items;
 }
 
-for (let i = 0; i < 10; i++) {
-  insertion(generateArray());
-}
+export default insertionSort;
