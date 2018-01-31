@@ -8,3 +8,7 @@
 
 # Node.js specific files
 node_modules/
+npm-debug.log
+
+# macOS specific files
+.DS_Store
