@@ -6,5 +6,5 @@
 .idea/**/tasks.xml
 .idea/dictionaries
 
-# Node.js
+# Node.js specific files
 node_modules/
